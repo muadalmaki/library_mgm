@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 17:51:45.086695",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mb"
+ ],
+  "fields": [
+    {"fieldname": "library_member", "label": "Library Member", "fieldtype": "Link", "options": "Customer", "reqd": 1},
+    {"fieldname": "member_name", "label": "Member Name", "fieldtype": "Data", "fetch_from": "library_member.customer_name", "read_only": 1},
+    {"fieldname": "from_date", "label": "From Date", "fieldtype": "Date", "reqd": 1},
+    {"fieldname": "to_date", "label": "To Date", "fieldtype": "Date", "reqd": 1},
+    {"fieldname": "paid", "label": "Paid", "fieldtype": "Check"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-29 17:51:45.086695",
+ "modified_by": "Administrator",
+ "module": "library_mgm",
+ "name": "Library Membership",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

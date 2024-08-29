@@ -1,0 +1,30 @@
+[
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "is_library_member",
+        "fieldtype": "Check",
+        "insert_after": "customer_name",
+        "label": "Is Library Member",
+        "name": "Customer-is_library_member"  
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "library_member_id",
+        "fieldtype": "Data",
+        "insert_after": "is_library_member",
+        "label": "Library Member ID",
+        "name": "Customer-library_member_id"  
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "is_membership_valid",
+        "fieldtype": "Check",
+        "insert_after": "library_member_id",
+        "label": "Is Membership Valid",
+        "name": "Customer-is_membership_valid"  
+    }
+]
+

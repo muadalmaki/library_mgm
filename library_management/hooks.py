@@ -213,3 +213,55 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"library_management.auth.validate"
 # ]
+
+
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Customer-is_library_member",
+                    "Customer-library_member_id",
+                    "Customer-is_membership_valid"
+                ]
+            ]
+        ]
+    }
+]
+
+from . import __version__ as app_version
+
+app_name = "library_management"
+app_title = "Library Management"
+app_publisher = "Your Name"
+app_description = "Library Management System"
+app_email = "your.email@example.com"
+app_license = "MIT"
+
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Customer-is_library_member",
+                    "Customer-library_member_id",
+                    "Customer-is_membership_valid"
+                ]
+            ]
+        ]
+    }
+]
+
+scheduler_events = {
+    "daily": [
+        "library_management.tasks.check_membership_validity"
+    ]
+}
+
+
