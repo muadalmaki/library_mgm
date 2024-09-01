@@ -234,11 +234,11 @@ fixtures = [
 
 from . import __version__ as app_version
 
-app_name = "library_management"
+app_name = "library_mgm"
 app_title = "Library Management"
-app_publisher = "Your Name"
+app_publisher = "Muad almakki"
 app_description = "Library Management System"
-app_email = "your.email@example.com"
+app_email = "muadalmaki@gmail.com"
 app_license = "MIT"
 
 fixtures = [
