@@ -7,20 +7,75 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "bnv"
+  "transaction_type",
+  "transaction_date",
+  "article",
+  "article_name",
+  "library_member",
+  "member_name",
+  "amended_from"
  ],
  "fields": [
-    {"fieldname": "transaction_type", "label": "Transaction Type", "fieldtype": "Select", "options": "Issue\nReturn", "reqd": 1},
-    {"fieldname": "transaction_date", "label": "Transaction Date", "fieldtype": "Date", "reqd": 1},
-    {"fieldname": "article", "label": "Article", "fieldtype": "Link", "options": "Article", "reqd": 1},
-    {"fieldname": "article_name", "label": "Article Name", "fieldtype": "Data", "fetch_from": "article.article_name", "read_only": 1},
-    {"fieldname": "library_member", "label": "Library Member", "fieldtype": "Link", "options": "Customer", "reqd": 1},
-    {"fieldname": "member_name", "label": "Member Name", "fieldtype": "Data", "fetch_from": "library_member.customer_name", "read_only": 1}
- 
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transaction Type",
+   "options": "Issue\nReturn",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Article",
+   "options": "Article",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "article.article_name",
+   "fieldname": "article_name",
+   "fieldtype": "Data",
+   "label": "Article Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Member",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "library_member.customer_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-08-29 17:52:54.905001",
+ "modified": "2024-09-03 01:26:26.673316",
  "modified_by": "Administrator",
  "module": "library_mgm",
  "name": "Library Transaction",

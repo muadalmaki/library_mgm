@@ -7,15 +7,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "dfc"
+  "loan_period"
  ],
-"fields": [
-    {"fieldname": "loan_period", "label": "Loan Period", "fieldtype": "Int", "reqd": 1}
-
+ "fields": [
+  {
+   "fieldname": "loan_period",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Loan Period"
+  }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-29 17:50:07.652069",
+ "modified": "2024-08-31 15:08:57.459779",
  "modified_by": "Administrator",
  "module": "library_mgm",
  "name": "Library Management Settings",

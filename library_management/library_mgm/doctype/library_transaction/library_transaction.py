@@ -15,7 +15,7 @@ class LibraryTransaction(Document):
             frappe.throw(_("The member does not have a valid membership"))
 
     def validate_maximum_limit(self):
-        settings = frappe.get_single("Library Management Settings")
+        settings = frappe.get_last_doc("Library Management Settings")
         if self.transaction_type == "Issue":
             count = frappe.db.count(
                 "Library Transaction",

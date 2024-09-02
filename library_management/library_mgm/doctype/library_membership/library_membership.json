@@ -7,18 +7,64 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "mb"
+  "library_member",
+  "member_name",
+  "from_date",
+  "to_date",
+  "paid",
+  "amended_from"
  ],
-  "fields": [
-    {"fieldname": "library_member", "label": "Library Member", "fieldtype": "Link", "options": "Customer", "reqd": 1},
-    {"fieldname": "member_name", "label": "Member Name", "fieldtype": "Data", "fetch_from": "library_member.customer_name", "read_only": 1},
-    {"fieldname": "from_date", "label": "From Date", "fieldtype": "Date", "reqd": 1},
-    {"fieldname": "to_date", "label": "To Date", "fieldtype": "Date", "reqd": 1},
-    {"fieldname": "paid", "label": "Paid", "fieldtype": "Check"}
+ "fields": [
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Member",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "library_member.customer_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Membership",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-08-29 17:51:45.086695",
+ "modified": "2024-09-03 01:23:22.512675",
  "modified_by": "Administrator",
  "module": "library_mgm",
  "name": "Library Membership",
