@@ -264,7 +264,5 @@ scheduler_events = {
     ]
 }
 
-fixtures = [
-    {"doctype": "Custom Report"}
-]
+
 

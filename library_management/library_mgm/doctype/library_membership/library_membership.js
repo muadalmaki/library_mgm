@@ -3,7 +3,7 @@ frappe.ui.form.on('Library Membership', {
         frm.set_query('library_member', function() {
             return {
                 filters: {
-                    is_membership_valid: 1
+                    is_membership_valid: 0
                 }
             };
         });
