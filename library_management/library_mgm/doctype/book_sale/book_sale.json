@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-08 01:54:33.191632",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bff",
+  "amended_from"
+ ],
+ "fields": [
+    {"fieldname": "customer", "label": "Customer", "fieldtype": "Link", "options": "Customer", "reqd": 1},
+    {"fieldname": "sale_date", "label": "Sale Date", "fieldtype": "Date", "reqd": 1},
+    {"fieldname": "total_amount", "label": "Total Amount", "fieldtype": "Currency", "read_only": 1},
+    {"fieldname": "items", "label": "Items", "fieldtype": "Table", "options": "Book Sale Item"}
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-08 01:54:33.191632",
+ "modified_by": "Administrator",
+ "module": "library_mgm",
+ "name": "Book Sale",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

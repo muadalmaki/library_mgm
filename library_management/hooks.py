@@ -263,6 +263,5 @@ scheduler_events = {
         "library_management.tasks.check_membership_validity"
     ]
 }
-
-
+dashboards = ["library_management.library_mgm.library_mgm_dashboard.library_dashboard"]
 

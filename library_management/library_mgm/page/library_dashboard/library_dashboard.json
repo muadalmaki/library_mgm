@@ -1,0 +1,28 @@
+{
+    "doctype": "Dashboard",
+    "name": "Library Dashboard",
+    "dashboard_name": "Library Dashboard",
+    "docstatus": 0,
+    "module": "Library Management",
+    "charts": [
+        {
+            "chart": "Book Transactions",
+            "width": "Half"
+        },
+        {
+            "chart": "Top Books",
+            "width": "Half"
+        }
+    ],
+    "cards": [
+        {
+            "card": "Total Books"
+        },
+        {
+            "card": "Total Members"
+        },
+        {
+            "card": "Books Issued"
+        }
+    ]
+}
