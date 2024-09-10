@@ -265,3 +265,13 @@ scheduler_events = {
 }
 dashboards = ["library_management.library_mgm.library_mgm_dashboard.library_dashboard"]
 
+
+
+
+scheduler_events = {
+    "daily": [
+        "library_management.notifications.custom_notifications.send_membership_expiry_notification"
+    ]
+}
+
+

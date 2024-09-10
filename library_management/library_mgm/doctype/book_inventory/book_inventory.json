@@ -7,19 +7,57 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "vfd"
+  "article",
+  "quantity",
+  "cost_price",
+  "selling_price",
+  "supplier",
+  "reorder_level"
  ],
  "fields": [
-    {"fieldname": "article", "label": "Article", "fieldtype": "Link", "options": "Article", "reqd": 1},
-    {"fieldname": "quantity", "label": "Quantity", "fieldtype": "Int", "reqd": 1},
-    {"fieldname": "cost_price", "label": "Cost Price", "fieldtype": "Currency", "reqd": 1},
-    {"fieldname": "selling_price", "label": "Selling Price", "fieldtype": "Currency"},
-    {"fieldname": "supplier", "label": "Supplier", "fieldtype": "Link", "options": "Supplier"}
-  ]
- ,
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Article",
+   "options": "Article",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Currency",
+   "label": "Selling Price"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "description": "The level of inventory at which a notification is sent.",
+   "fieldname": "reorder_level",
+   "fieldtype": "Int",
+   "label": "Reorder Level"
+  }
+ ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-08 01:35:58.543150",
+ "modified": "2024-09-10 03:46:52.016663",
  "modified_by": "Administrator",
  "module": "library_mgm",
  "name": "Book Inventory",
